@@ -1,46 +1,66 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Тестовое задание необходимо выполнить, используя
+следующий перечень технологий и подходов:
+1. Использовать библиотеки для управления глобальным состоянием.
+2. Компонентный подход.
+3. Использовать роутинг для навигации.
+4. Использование анимационных эффектов при переходе между роутами, при
+переключении между компонентами (transitions, animate.css, etc).
+5. Использование ES6 (arrow functions, spread operators, template strings &
+interpolation, etc).
+6. Использование сторонних плагинов не запрещается если без них нельзя
+обойтись.
+7. Git (выполнить тестовое задание с помощью системы контроля версий Git. По
+итогу окончания работы, прислать ссылку на git-репозиторий с проектом. В
+репозитории обязательно должен быть понятно написанный Readme.md с
+описанием установки всех зависимостей и информацией по запуску проекта).
+8. Websocket для создания счетчика активных вкладок приложения (см. Описание
+задачи).
+9. HTML/CSS (верстка компонентов должна быть выполнена структурно в рамках
+скрина-примера).
+Необходимо реализовать:
+1. Выполнить верстку компонентов на базе скринов-примеров.
+2. Приложение должно включать отдельные страницы.
+3. Создать компонент Navigation Menu, в котором будут находится роут-ссылки на
+Orders и Products.
+4. Создать компонент TopMenu, в котором необходимо вывести дату и время,
+которое будет идти в реальном времени (в правом верхнем углу ). Рядом с датой
+вывести счетчик с помощью Socket.io, который будет показывать количество
+активных сессий приложения в браузерах в реальном времени.
+5. Создать компоненты Orders и Products. В каждом Order есть свои products.
+Пример полей и отношения Orders к Products можно посмотреть в файле app.js.
+6. В компоненте Orders сделать функционал, при котором пользователь кликает на
+конкретный приход, и он открывается рядом. Блок с информацией о приходе
+можно закрыть (см. скрины). В компоненте Orders вывести информацию по
+каждому приходу: Название прихода, количество продуктов в приходе. Даты
+создания прихода в двух форматах, сумма прихода, равная сумме цен продуктов
+в двух валютах. Кнопка удаления прихода, по клику на которую будет
+открываться попап (см. скрины).
+7. В компоненте Products вывести все продукты + сделать фильтр по типу
+продуктов (1 селект) В каждом продукте вывести поля: Название продукта, тип
+продукта, даты гарантии в разных форматах, цена в разных валютах, Название
+прихода.
+Требования к результату (для всех уровней)
+Обязательные инструменты для разработчика
+■ React.js (последняя версия);
+■ Redux
+■ CSS Architecture (БЭМ)
+■ CSS Frameworks
+■ Bootstrap
+■ REST (Axios/Fetch);
+■ Form (Validation)
+■ Git
+■ Docker
+■ WebSocket (WS)
+Ожидаемый формат вашего тестового в результате
+■ Развёрнуть (Хостинг / VDS), результат будет проверятся тестировщиком по
+чек-листу, прежде чем будут смотреть тех.специалисты подразделения.
+■ Docker, упаковать в контейнер приложение со всем окружением и
+зависимостями
+■ Git-репозиторий, для анализа ветвлений в процессе выполнения тестового.
+■ Read.me, так чтобы по нему было понятно что это за проект и какие функции в
+нём есть.
+■ Файл схемы БД, который можно открыть в программе MySQL Workbench, чтобы
+сравнить что вы спроектировали, а что в итоге реализовали в тестовом.
+Самопроверка
+Для самопроверки, перед тем как говорить что всё готово, попробуйте
+запустить свой проект с нуля по вашему Read.me из вашего Git-репозитория.

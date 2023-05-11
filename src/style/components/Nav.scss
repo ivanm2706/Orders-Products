@@ -1,0 +1,30 @@
+.nav {
+  padding: 50px;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__link {
+    padding-bottom: 5px;
+    border-bottom: 5px solid transparent;
+    transition: border-bottom 300ms;
+
+    &:hover {
+      border-bottom: 5px solid $yelloyGreen;
+    }
+
+    &--active {
+      border-bottom: 5px solid $yelloyGreen;
+    }
+  }
+}

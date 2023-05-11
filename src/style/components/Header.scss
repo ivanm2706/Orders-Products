@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: $PaddingHeader $MenuWidth;
+
+  &__container {
+    display: flex;
+    gap: 15px;
+  }
+
+  &__logoTitle {
+    text-transform: uppercase;
+    color: $yelloyGreen;
+    line-height: $HeightLogo;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__logo {
+    height: $HeightLogo;
+    width: auto;
+  }
+
+  &__date {
+    font-weight: 600;
+  }
+
+  &__dateFullDate {
+    display: flex;
+    gap: 7px;
+  }
+
+  &__fullDate {
+    margin-right: 10px;
+  }
+
+  &__dateTitle {
+    margin-bottom: 5px;
+  }
+}

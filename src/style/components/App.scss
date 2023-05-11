@@ -1,0 +1,8 @@
+.App {
+  margin: 0 auto;
+
+  &__main {
+    display: flex;
+    min-height: $minHeightMain;
+  }
+}
