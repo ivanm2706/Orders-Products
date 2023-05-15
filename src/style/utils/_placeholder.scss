@@ -1,0 +1,11 @@
+%boxShadow {
+  -webkit-box-shadow: inset 10px 10px 42px -32px rgba(0,0,0,0.67);
+  -moz-box-shadow: inset 10px 10px 42px -32px rgba(0,0,0,0.67);
+  box-shadow: inset 10px 10px 42px -32px rgba(0,0,0,0.67);
+}
+
+%boxShadowOut {
+  -webkit-box-shadow: 24px 22px 36px -19px rgba(56,52,56,0.46);
+  -moz-box-shadow: 24px 22px 36px -19px rgba(56,52,56,0.46);
+  box-shadow: 24px 22px 36px -19px rgba(56,52,56,0.46);
+}

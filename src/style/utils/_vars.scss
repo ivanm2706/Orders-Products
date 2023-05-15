@@ -1,9 +1,15 @@
 $yelloyGreen: #6dbb6d;
-$lightGrey: #f1f1f1;
+$lightGrey: #f1f1f170;
 $whiteColor: #fff;
+$yelloy: #dbdb30;
+$greyBorder: #e5dddd;
+$greyBG: #efefef;
 
 $HeightLogo: 65px;
 $PaddingHeader: 10px;
 $MenuWidth: 250px;
+$containerPadding: 50px;
 
+$containerWidth: calc(100vw - $MenuWidth);
+$productListWidth: calc($containerWidth - $containerPadding * 2);
 $minHeightMain: calc(100vh - $HeightLogo - $PaddingHeader * 2);

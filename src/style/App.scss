@@ -1,5 +1,6 @@
 @import './reset';
 @import './utils/vars';
+@import './utils/placeholder';
 
 @import './components/App.scss';
 @import './components/Header.scss';
@@ -7,3 +8,9 @@
 @import './components/Menu.scss';
 @import './components/Button.scss';
 @import './components/Nav.scss';
+@import './components/Input.scss';
+@import './components/Container.scss';
+@import './components/Select.scss';
+@import './components/Products.scss';
+@import './components/Product.scss';
+@import './components/Modal.scss';

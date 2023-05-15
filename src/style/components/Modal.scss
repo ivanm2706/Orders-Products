@@ -1,0 +1,24 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 40%;
+  background: $whiteColor;
+  padding-top: 20px;
+  z-index: 5;
+
+  &__bottom {
+    background-color: $yelloyGreen;
+    padding: 15px;
+    text-align: right;
+  }
+
+  &__title {
+    margin-left: 15px;
+    margin-bottom: 20px;
+  }
+
+  & + .products .product {
+    position: relative;
+    z-index: 0;
+  }
+}

@@ -1,0 +1,41 @@
+.select {
+  position: relative;
+  width: 200px;
+  border: 1px solid $greyBorder;
+  cursor: pointer;
+  transition: all 3000ms;
+  background-color: $whiteColor;
+  z-index: 0;
+
+  &__current {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    transition: all 3000ms;
+  }
+  
+  &__options {
+    position: absolute;
+    z-index: 5;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid $greyBorder;
+    background-color: $whiteColor;
+    overflow: hidden;
+    height: 0;
+    transition: all 3000ms;
+  }
+  
+  &__option {
+    padding: 10px;
+
+    &:hover {
+      background-color: $greyBG;
+    }
+  }
+
+  &--open .select__options {
+    height: max-content;
+  }
+}

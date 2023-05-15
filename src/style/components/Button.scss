@@ -1,24 +1,109 @@
 .button {
-  position: absolute;
   height: 40px;
   width: 40px;
   background-color: $whiteColor;
   border: none;
-  -webkit-box-shadow: 3px 11px 31px 7px rgba(0,0,0,0.11);
-  -moz-box-shadow: 3px 11px 31px 7px rgba(0,0,0,0.11);
-  box-shadow: 3px 11px 31px 7px rgba(0,0,0,0.11);
   background-repeat: no-repeat;
   background-size: 20px 20px;
   background-position: center;
   cursor: pointer;
+
+  &__shadow {
+    @extend %boxShadowOut;
+  }
 
   &__circle {
     border-radius: 50%;
   }
 
   &__setting {
+    position: absolute;
     top: 120px;
     right: 75px;
     background-image: url(../../image/settings.svg);
+  }
+
+  &__delete {
+    background-image: url(../../image/delete.svg);
+  }
+
+  &__menu {
+    background-image: url(../../image/list-menu.svg);
+    border-radius: 50%;
+    border: 1px solid black;
+    flex-shrink: 0;
+  }
+
+  &__add {
+    @extend %boxShadowOut;
+    border-radius: 50%;
+    border: 1px solid green;
+    background-color: $yelloyGreen;
+    color: $whiteColor;
+  }
+
+  &__cross {
+    position: absolute;
+    top: -18px;
+    right: -18px;
+    @extend %boxShadowOut;
+    border-radius: 50%;
+    border: 1px solid $lightGrey;
+  }
+
+  &__reset {
+    height: auto;
+    width: auto;
+    margin-right: 20px;
+    background-color: transparent;
+    color: $whiteColor;
+    text-transform: uppercase;
+  }
+
+  &__remove {
+    height: auto;
+    width: auto;
+    padding: 10px 40px;
+    border-radius: 30px;
+    position: relative;
+    color: red;
+    text-transform: uppercase;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 15px;
+      height: 15px;
+      left: 20px;
+      background-repeat: no-repeat;
+      background-size: 12px 12px;
+      background-position: center;
+      background-image: url(../../image/delete-red.svg);
+    }
+  }
+
+  &__addProduct {
+    position: relative;
+    height: auto;
+    width: auto;
+    color: $yelloyGreen;
+    padding-left: 40px;
+    margin-bottom: 10px;
+
+    &::before {
+      content: '+';
+      position: absolute;
+      display: block;
+      width: 15px;
+      height: 15px;
+      left: 20px;
+      color: $whiteColor;
+      background-color: $yelloyGreen;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-size: 12px 12px;
+      background-position: center;
+    }
   }
 }

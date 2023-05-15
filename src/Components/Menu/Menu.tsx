@@ -9,7 +9,7 @@ function Menu() {
         src="./img/person.jpg"
         alt="person"
       />
-      <button className="button button__circle button__setting"/>
+      <button className="button button__circle button__shadow button__setting"/>
       <Navigation />
     </div>
   )

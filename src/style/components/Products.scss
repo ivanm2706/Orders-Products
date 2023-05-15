@@ -1,0 +1,92 @@
+.products {
+  &__header {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    width: max-content;
+  }
+
+  &__typeSelect {
+    margin-left: 20px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    &--active {
+      & .products__container-right {
+        display: block;
+      }
+      & .products__container-left {
+        width: 30%;
+      }
+      & .products__container-left .product__orderName,
+      .products__container-left .product__price,
+      .products__container-left .button__delete {
+        display: none;
+      }
+
+      & .product--orderPage {
+        min-width: fit-content;
+        padding-right: 59px;
+      }
+
+      & .products__list {
+        max-width: 520px;
+      }
+
+      & .product__arrow {
+        display: block;
+      }
+
+      & .product {
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  &__container-right {
+    position: relative;
+    background-color: $whiteColor;
+    display: none;
+
+    & .product:nth-child(n) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__container-right-title {
+    margin-left: 20px;
+  }
+
+  &__list {
+    width: 100%;
+      max-width: 800px;
+
+    &--scroll {
+      overflow-x: scroll;
+    }
+
+    &::-webkit-scrollbar {
+      height: 10px;
+      
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: $greyBG;
+      border: 1px solid $greyBorder;
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #99919170;
+      border-radius: 10px;
+    }
+  }
+}

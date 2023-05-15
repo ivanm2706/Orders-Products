@@ -1,0 +1,104 @@
+.product {
+  background-color: $whiteColor;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: space-between;
+  width: max-content;
+
+  &:nth-child(n) {
+    margin-bottom: 10px;
+  }
+
+  &--border {
+    border: 1px solid $greyBorder;
+  }
+
+  &--orderPage {
+    width: 100%;
+
+    &:hover {
+      position: relative;
+      z-index: 100;
+      @extend %boxShadowOut;
+    }
+  }
+
+  &--active {
+    @extend %boxShadowOut;
+    position: relative;
+  }
+
+  &__status {
+    &--free {
+      color: $yelloy;
+    }
+  }
+
+  &__used {
+    min-width: 50px;
+  }
+
+  &__mark {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    margin-inline: 20px;
+
+    &--free {
+      background-color: $yelloy;
+    }
+  }
+
+  &__img {
+    height: 40px;
+  }
+
+  &__fullName {
+    text-decoration: underline black;
+    white-space: nowrap;
+    margin-bottom: 5px;
+    min-width: 400px;
+  }
+
+  &__timeFromTo {
+    white-space: nowrap;
+  }
+
+  &__price {
+    white-space: nowrap;
+  }
+
+  &__groupTitle {
+    max-width: 250px;
+  }
+
+  &__personName {
+    min-width: 240px;
+  }
+
+  &__orderName {
+    width: 250px;
+
+    &--orderPage {
+      flex-basis: 350px;
+      width: max-content;
+    }
+  }
+
+  &__arrow {
+    display: none;
+    position: absolute;
+    width: 50px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #6c6c6c70;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../../image/angle-right.svg);
+  }
+}

@@ -1,10 +1,11 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: $PaddingHeader $MenuWidth;
+  padding: $PaddingHeader 50px $PaddingHeader $MenuWidth;
 
   &__container {
     display: flex;
+    align-items: center;
     gap: 15px;
   }
 
@@ -32,6 +33,7 @@
 
   &__fullDate {
     margin-right: 10px;
+    width: max-content;
   }
 
   &__dateTitle {

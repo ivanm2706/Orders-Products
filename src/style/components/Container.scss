@@ -1,0 +1,16 @@
+.container {
+  position: relative;
+  min-width: 1200px - 250px;
+  padding: $containerPadding;
+  background-color: $greyBG;
+
+  &__modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #3b576270;
+    z-index: 1;
+  }
+}
